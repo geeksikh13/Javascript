@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Javascript</title>
+		
+		<style>
+			
+			#circle{
+				width:200px;
+				height:200px;
+				border-radius:100px;
+				background-color:green;
+			}
+		
+		</style>
+		
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	</head>
+
+	<body>
+		
+		<input id="myInput" type="text" value="test"/>
+		
+		<br >
+		
+		<button id="magic">Magic</button>
+		
+		<div id="disp">display</div>
+		
+		
+		<!-- <div id="circle"></div> <br > 
+		
+		
+		</br>
+			
+		<button id="killCircle">Kill!</button>-->
+		
+				
+		<script type="text/javascript">
+		
+			var newText; 
+			
+					
+			document.getElementById("magic").onclick=function(){
+				
+				newText = document.getElementById("myInput").value; 
+				
+				document.getElementById("disp").innerHTML=newText;
+			}
+		
+			/*
+			var divId="circle";
+				
+			document.getElementById("killCircle").onclick=function(){
+				
+				document.getElementById(divId).style.display="none";
+			}
+		
+			
+			document.getElementById("killCircle").onclick=function(){
+				
+				document.getElementById("circle").style.display="none";
+			}
+			*/
+			
+		</script>
+	
+	</body>
+
+</html>

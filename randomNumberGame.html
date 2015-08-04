@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Javascript</title>
+		
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />		
+	
+	</head>
+
+	<body>
+	
+		<p>Guess the number? Its between 0 and 9</p>
+		
+		<input id="number" />
+		
+		<button id="btnClick">Submit</button>
+		
+		<p id="result">All the best!</p>
+	
+		<script type="text/javascript">
+		
+			document.getElementById("btnClick").onclick=function(){
+				
+				var x = Math.random();
+				
+				//alert(Math.pow(x,3));
+				
+				x=x*10;
+				
+				x = Math.floor(x); 
+					
+				//alert( x );
+				
+				if(document.getElementById("number").value == x){
+					
+					document.getElementById("result").innerHTML="Congratulations! You are right! Its " + x + ".";
+				}else{
+					document.getElementById("result").innerHTML="Sorry! Its " + x + ". Please try again!";
+				}
+			
+			}
+			
+		</script>
+	
+	</body>
+
+</html>

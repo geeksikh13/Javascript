@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Javascript</title>
+		
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	</head>
+
+	<body>
+		
+		<!-- <p id="text">This is a paragraph</p>		-->
+		
+		<button id="textChanger">Click</button>
+		
+		<div id="firstDiv">You can bring change</div><br >
+		
+		<button id="textAppender">Preserve and change</button>
+		
+		<div id="secondDiv">You can bring change and preserve history.</div><br >
+		
+		<button id="textCreator">Creator</button>
+		
+		<div id="emptyDiv"></div>
+		
+		<script type="text/javascript">
+				
+				/*get an HTML element by its id
+			document.getElementById("text").innerHTML="Some text";
+			*/
+			
+			/*code that responds to a click
+			
+			document.getElementById("myButton").onclick=function(){
+			
+				alert("Alert");
+			}
+			*/
+			
+			document.getElementById("textChanger").onclick=function(){
+			
+				document.getElementById("firstDiv").innerHTML="Awesome!";
+			}
+			
+			
+			document.getElementById("textAppender").onclick=function(){
+			
+				document.getElementById("secondDiv").innerHTML=document.getElementById("secondDiv").innerHTML + " Great!";
+			}
+			
+			
+			document.getElementById("textCreator").onclick=function(){
+			
+				document.getElementById("emptyDiv").innerHTML="<ul> <li>Dog</li> <li>Cat</li> </ul>";
+			}
+			
+		</script>
+	
+	</body>
+
+</html>

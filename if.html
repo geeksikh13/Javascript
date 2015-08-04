@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Javascript</title>
+		
+		<meta charset="utf-8"/>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />		
+	
+	</head>
+
+	<body>
+	
+		<p>Who are you?</p>
+		
+		<input id="name" />
+		
+		<button id="btnClick">Submit</button>
+	
+		<script>
+		
+			/*
+			var x=2;
+			
+			if(x==1){
+				alert("x is 1");
+			}else{
+				alert("x is not 1")
+			}
+			*/
+			
+			document.getElementById("btnClick").onclick=function(){
+			
+				if(document.getElementById("name").value=="Balwinder Singh"){
+				
+					alert("Welcome " + document.getElementById("name").value + "!");
+				}else{
+				
+					alert("Your are not authorised!")
+				}
+			}
+			
+		</script>
+	
+	</body>
+
+</html>
